@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lucky Sevens!!</title>
+		<script type="text/Javascript" src="luckySevens.js"></script>
+		
+		<style>
+			body{
+				max-width: 350px;
+				font-family: 'Comic Sans MS', arial;
+				margin: 0 auto;
+			}
+			
+			h1{
+				text-align: center;
+				font-size: 200%;
+			}
+			
+			body input{
+				width: 100px;
+			}
+			
+			button{
+				margin-left: 120px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				
+			}
+			
+		table, td{
+			border: 1px solid #0d1f2d;
+			border-collapse: collapse;
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+
+		</style>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Lucky Sevens!!!</h1>
+		</header>
+		
+		<section>
+			<article id="gameScreen">
+			
+				<form name="gameForm" onsubmit="return validateNumber();">
+					<label for="startingBet">Starting Bet: </label>
+						<input type="number" id="startingBet" /><br />
+					<button type="submit" id="playButton">Play!</button>
+				</form>	
+			</article>	
+			
+			<article id="gameTable" style="display:none;">
+				<hr />
+				<h1>Results</h1>
+				<table id="results">
+					<tr>
+						<td>Starting Bet</td>
+						<td>$<span id="tableStartingBet"></span></td>
+					</tr>
+					
+					<tr>
+						<td>Total rolls Before Going Broke</td>
+						<td><span id="tableTurns"></span></td>
+					</tr>
+					
+					<tr>
+						<td>Highest Amount Won</td>
+						<td>$<span id="tableMaxMoney"></span></td>
+					</tr>
+					
+					<tr>
+						<td>Roll Count at highest Amount Won</td>
+						<td><span id="tableMaxTurns"></span></td>
+					</tr>
+				</table>
+			</article>
+		</section>
+	</body>
+</html>
