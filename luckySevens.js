@@ -47,7 +47,7 @@ function gameRun(startingBet){
 	document.getElementById("tableTurns").innerText = turnCounter;
 	document.getElementById("tableMaxMoney").innerText = highestMoney;
 	document.getElementById("tableMaxTurns").innerText = highestMoneyTurn;
-	return false;
+	return false; //return false always
 }
 
 
